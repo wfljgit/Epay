@@ -548,3 +548,21 @@ CREATE TABLE `pre_refundorder` (
  KEY `out_refund_no` (`out_refund_no`,`uid`),
  KEY `trade_no` (`trade_no`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `pre_plugin` 
+MODIFY COLUMN `types` varchar(4096) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `link`;
+
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('TRX', 0, 'TRX', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('USDT_TRC20', 0, 'USDT-TRC20', 1);
+
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_ETH_ETH', 0, 'ETH', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_ETH_USDT_ERC20', 0, 'USDT-ERC20', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_ETH_USDC_ERC20', 0, 'USDC-ERC20', 0);
+
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_BSC_BNB', 0, 'BNB', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_BSC_USDT_BEP20', 0, 'USDT-BEP20', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_BSC_USDC_BEP20', 0, 'USDC-BEP20', 0);
+
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_Polygon_POL', 0, 'POL', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_Polygon_USDT_ERC20', 0, 'USDT-Polygon', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_Polygon_USDC_ERC20', 0, 'USDC-Polygon', 0);
