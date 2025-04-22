@@ -566,3 +566,6 @@ INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_BS
 INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_Polygon_POL', 0, 'POL', 0);
 INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_Polygon_USDT_ERC20', 0, 'USDT-Polygon', 0);
 INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('EVM_Polygon_USDC_ERC20', 0, 'USDC-Polygon', 0);
+
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('usdt.trc20', 0, 'usdt.trc20', 0);
+INSERT INTO `pre_type` ( `name`, `device`, `showname`, `status`) VALUES ('tron.trx', 0, 'tron.trx', 0);
